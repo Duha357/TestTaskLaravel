@@ -21,8 +21,6 @@ php 7.4
 
 #### Внимание: В случае возникновения некоторых ошибок
 
-- Если в проекте не создался файл `.env`, то необходимо сделать копию файла `.env.example` и переименновать в `.env`
-
 - Если проект будет жаловаться на осутствие расширения fileinfo с подписью `require ext-fileinfo * -> it is missing from your system.`, то необходимо зайти в папку с PHP и в файле `php.ini` изменить строчку `;extension=fileinfo` на `extension=fileinfo`
 
-- Если при выполнении команды `php artisan migrate` проект будет жаловаться на драйвер с подписью `could not find driver`, то необходимо зайти в папку с PHP и в файле `php.ini` изменить строчку `;extension=pdo_pgsql` на `extension=pdo_pgsql`, а также рекомендуется изменить строчку `;extension=pgsql` на `extension=pgsql`
+- Если при выполнении команды `php artisan migrate` проект будет жаловаться на драйвер с подписью `could not find driver`, то необходимо зайти в папку с PHP и в файле `php.ini` изменить строчку `;extension=pdo_sqlite` на `extension=pdo_sqlite`

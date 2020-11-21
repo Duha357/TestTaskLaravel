@@ -11,9 +11,17 @@ php 7.4
 
 - Скачать проект целиком и распаковать в желаемую папку или использовать команду: `git clone https://github.com/Duha357/TestTaskLaravel`
 
-- Через терминал зайти в папку проекта и запустить миграции: php artisan migrate
+- Через терминал зайти в папку проекта(где папка app) и установить нужные компоненты, командой: `composer install --no-interaction --prefer-dist`
+
+- Создать файл базы sqlite с именем `database.sqlite` в папке database
+
+- Вернуться в папку проекта и запустить миграции: php artisan migrate
 
 - Запустить сидеры: php artisan db:seed
+
+- Скопировать файл `.env.example` и переименновать в `.env`
+
+- Сгенерировать ключ приложения, используя команду: `php artisan key:generate`
 
 - Запустить: php artisan serve
 

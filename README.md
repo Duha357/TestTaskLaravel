@@ -9,7 +9,7 @@ php 7.4
 
 - Скачать и установить Composer
 
-- Скачать проект целиком и распаковать в желаемую папку или использовать команду: git clone https://github.com/Duha357/TestTaskLaravel
+- Скачать проект целиком и распаковать в желаемую папку или использовать команду: `git clone https://github.com/Duha357/TestTaskLaravel`
 
 - Через терминал зайти в папку проекта и запустить миграции: php artisan migrate
 
@@ -18,3 +18,11 @@ php 7.4
 - Запустить: php artisan serve
 
 - Перейти на localhost:8000, либо http://127.0.0.1:8000
+
+#### Внимание: В случае возникновения некоторых ошибок
+
+- Если в проекте не создался файл `.env`, то необходимо сделать копию файла `.env.example` и переименновать в `.env`
+
+- Если проект будет жаловаться на осутствие расширения fileinfo с подписью `require ext-fileinfo * -> it is missing from your system.`, то необходимо зайти в папку с PHP и в файле `php.ini` изменить строчку `;extension=fileinfo` на `extension=fileinfo`
+
+- Если при выполнении команды `php artisan migrate` проект будет жаловаться на драйвер с подписью `could not find driver`, то необходимо зайти в папку с PHP и в файле `php.ini` изменить строчку `;extension=pdo_pgsql` на `extension=pdo_pgsql`, а также рекомендуется изменить строчку `;extension=pgsql` на `extension=pgsql`
